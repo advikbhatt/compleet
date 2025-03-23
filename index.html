@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COMPLEET Online Editor</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <header>
-        <span class="beta">BETA</span>
+        <!-- <span class="beta">BETA</span> -->
         <h1>🖥️ COMPLEET Online Editor</h1>
         <p class="subtitle">
           A custom language playground with a clean, VS Code–inspired interface.
@@ -19,18 +23,23 @@
       <div class="editor-box">
         <div class="top-bar">
           <div class="buttons">
-            <button onclick="newFile()">New File</button>
-            <button onclick="copyCode()">Copy</button>
-            <button onclick="downloadCode()">Download</button>
-            <button onclick="openGitHub()">GitHub</button>
-            <button onclick="shareCode()">Share</button>
-            <button class="run-btn" onclick="runCode()">▶ Run</button>
+            <button class="buttons4" onclick="runCode()">
+              <i class="fa-solid fa-file"></i>
+            </button>
+            <button class="buttons1" onclick="copyCode()">
+              <i class="fa-solid fa-copy"></i>
+            </button>
+            <button class="buttons2" onclick="downloadCode()">
+              <i class="fa fa-download" aria-hidden="true"></i>
+            </button>
+            <button class="buttons3" onclick="runCode()">
+              <i class="fa-solid fa-play"></i>
+            </button>
           </div>
         </div>
 
         <!-- Code Editor Area -->
         <div class="code-area">
-          <div class="line-numbers">1</div>
           <textarea
             id="code"
             class="editor"
