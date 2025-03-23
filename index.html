@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COMPLEET Online Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="beta">BETA</span>
+      <h1>🖥️ COMPLEET Online Editor</h1>
+      <p class="subtitle">A custom language playground with a clean, VS Code–inspired interface.</p>
+    </header>
+
+    <div class="editor-box">
+      <div class="top-bar">
+        <div class="buttons">
+          <button onclick="newFile()">New File</button>
+          <button onclick="copyCode()">Copy</button>
+          <button onclick="downloadCode()">Download</button>
+          <button onclick="openGitHub()">GitHub</button>
+          <button onclick="shareCode()">Share</button>
+          <button class="run-btn" onclick="runCode()">▶ Run</button>
+        </div>
+      </div>
+
+      <!-- Code Editor Area -->
+      <div class="code-area">
+        <div class="line-numbers">1</div>
+        <textarea id="code" class="editor" placeholder="// Write your code here..."></textarea>
+      </div>
+
+      <!-- Output Panel Always Visible -->
+      <div class="output-panel">
+        <h2>Output:</h2>
+        <pre id="output">Click 'Run' to see output...</pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
